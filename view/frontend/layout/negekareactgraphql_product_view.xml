@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="header.welcome" remove="true" />
+
+        <!-- Varsayılan minicart kaldır -->
+        <referenceBlock name="minicart" remove="true" />
+
+        <!-- Varsayılan ürün arama alanı kaldır -->
+        <referenceBlock name="top.search" remove="true" />
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="react.app.root" template="Negeka_ReactGraphQl::react_app.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

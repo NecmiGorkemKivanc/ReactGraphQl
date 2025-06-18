@@ -1,0 +1,18 @@
+<div id="root"></div>
+<div id="custom-header" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: #f8f8f8; border-bottom: 1px solid #ddd;">
+    <div class="react-minicart" id="react-minicart-root">
+    </div>
+</div>
+
+<div id="main-content" style="padding: 24px;">
+</div>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        if (window.mountReactMinicart) {
+            window.mountReactMinicart(document.getElementById('react-minicart-root'));
+        }
+    });
+</script>
+
+<script src="<?= $block->getViewFileUrl('Negeka_ReactGraphQl::js/main.74e3a6c3.js') ?>"></script>
